@@ -1,0 +1,473 @@
+@charset "utf-8";
+
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    max-width: 100%;
+}
+
+.nav-link:hover {
+    transform: scale(0.9);
+    transition: all 0.5s;
+}
+
+.arrowup {
+    z-index: 10;
+    margin-left: 70em;
+    margin-top: -10em
+}
+
+
+.arrowup:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out
+}
+
+/*  =================================================================================
+                                       Home Page
+    ================================================================================= */
+
+
+.home_img {
+    height: 27em
+}
+
+.progress_bar {
+    height: 5px;
+}
+
+.home-text {
+    margin-top: 3em;
+    margin-left: 2em;
+}
+
+#bday-countdown {
+    margin-bottom: 5em
+}
+
+.bday-text {
+    margin-bottom: 1em;
+    margin-top: 3em
+}
+
+.bday-wishes {
+    text-decoration: none;
+}
+
+.bday-wishes:hover {
+    transform: scale(1.2)
+}
+
+/*  =================================================================================
+                                      Experience
+    ================================================================================= */
+
+.experience-title h1 {
+    font-size: 4em;
+    height: 10rem;
+}
+
+.lifein {
+    margin-left: 20em;
+    margin-top: 13em;
+}
+
+.experience_singapore {
+    margin-left: 1em;
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+}
+
+.polytechnic {
+    margin-left: 25em;
+    position: absolute;
+}
+
+.sp_image {
+    margin-top: 5em
+}
+
+.FMOP_image {
+    height: 22em;
+    width: 30em;
+}
+
+.experience_link {
+    text-decoration: none;
+}
+
+.experience_DCITP_image {
+    height: 20em;
+}
+
+.experience_DIT_image {
+    height: 20em; 
+    transform: scale(1.7); 
+    margin-top: 8em
+}
+
+.experience_DISM_image {
+    height: 20em; 
+    margin-top: 5em
+}
+
+.experience_DAAA_image {
+    height: 20em;
+}
+
+.experience_h2:hover {
+    transform: scale(0.95);
+    transition: all 0.25s ease-in-out
+}
+
+.experience_text {
+    margin-left: 2em;
+}
+
+.experience_singapore h1 {
+    margin-left: 5vw;
+}
+
+@media all and (max-width: 522px) {
+    .experience_singapore h1 {
+        font-size: 10vw
+    }
+}
+
+@media all and (max-width: 826px) and (min-width: 522px) {
+    .experience_singapore h1 {
+        font-size: 10vw
+    }
+}
+
+@media all and (max-width: 810px) {
+    #AI {
+        margin-bottom: 10em
+    }
+}
+
+@media all and (max-width: 826px) and (min-width: 522px){
+    .experience_singapore {
+        font-size: 0.5em;
+    }
+}
+
+
+@media all and (max-width: 522px) {
+    .experience_singapore {
+        font-size: 0.3em;
+    }
+}
+
+@media all and (max-width: 826px) and (min-width: 522px){
+    .lifein {
+        margin-left: 5em
+    }
+}
+
+@media all and (max-width: 522px) {
+    .lifein {
+        margin-left: 5em
+    }
+}
+
+@media all and (max-width: 826px) and (min-width: 522px){
+    .polytechnic {
+        font-size: 0.5em;
+        margin-left: 15em
+    }
+}
+
+@media all and (max-width: 522px) {
+    .polytechnic {
+        margin-left: 12em;
+        margin-top: -3em
+    }
+}
+
+@media all and (max-width: 1158px) and (min-width: 742px){
+    .experience_texts {
+        margin-top: -10em
+    }
+}
+
+/*  =================================================================================
+                                        Career
+    ================================================================================= */
+
+
+.career_h2:hover {
+    transform: scale(0.95);
+    transition: all 0.25s ease-in-out;
+}
+
+.career_link {
+    text-decoration: none;
+}
+
+.career_hacking_image {
+    height: 20em;
+}
+
+.career_fullstack_image {
+    height: 20em;
+}
+
+.career_analyst_image {
+    height: 20em;
+}
+
+.career_table {
+    height: 30em;
+}
+
+.career_table_caption {
+    caption-side: bottom; 
+    text-align: right; 
+    font-size: 0.8em;
+}
+
+.career_table_foot {
+    font-size: 0.7em;
+}
+
+
+
+/*  =================================================================================
+                                       Feedback
+    ================================================================================= */
+
+
+
+
+
+
+
+/* Carousel stuffs (Experience and Career page) */
+
+.carousel-item {
+    height: 32rem;
+    background-color: #000;
+    color: white;
+    position: relative;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.carousel_slides {
+    position: absolute; 
+    padding-bottom: 50px; 
+    left: 0; 
+    right: 0;
+    bottom: 7em;
+}
+
+
+
+/*  =================================================================================
+                                        Footer
+    ================================================================================= */
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    flex-direction: column;
+    height: 10em
+}
+
+.icons {
+    position: relative;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.instagram, .discord, .twitter {
+    font-size: 2em;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.instagram:hover, .discord:hover, .twitter:hover {
+    transform: translateY(-10px)
+}
+
+.footer_p {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 10em;
+    font-size: 1.1em;
+}
+
+.wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(../images/wave.png);
+    background-size: 1000px 100px;  
+}
+
+#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave_1 4s linear infinite;
+}
+
+#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_2 4s linear infinite;
+}
+
+#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave_1 3s linear infinite;
+}
+
+#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_2 3s linear infinite;
+}
+
+@keyframes animateWave_1 {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+
+@keyframes animateWave_2 {
+    0% {
+        background-position-x: 0px;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+/*  =================================================================================
+                                      Animation
+    ================================================================================= */
+
+/* Fade ins */
+.fade-in-left{
+    animation: fadeInLeft 2.5s;
+}
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(8vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}  
+.fade-in-right{
+    animation: fadeInRight 2.5s;
+}
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-8vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}  
+.fade-in-up{
+    animation: fadeInUp 2.5s;
+}
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translateY(8vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}  
+.fade-in-down{
+    animation: fadeInDown 2.5s;
+}
+@keyframes fadeInDown{
+    0%{
+        opacity: 0;
+        transform: translateY(-8vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* typewriter */
+.typewriter-animation{
+    overflow: hidden;
+    border-right: .15em solid #d9534f;
+    white-space: nowrap;
+    height: fit-content;
+    animation: 
+        typing 2.5s steps(20, end),
+        blink-caret .75s step-end;
+}
+  
+/* The typing effect */
+@keyframes typing{
+    0%{width: 0}
+    100%{width: 8em}
+}
+  
+/* The blinking cursor */
+@keyframes blink-caret{
+    0%, 100%{
+        border-color: transparent;
+    }
+    50%{
+        border-color: #d9534f;
+    }
+}
+
+
+/* progress bar animation */
+
+.progress-bar-animation {
+    animation: progressanimation 2s ease-in-out forwards
+}
+
+@keyframes progressanimation {
+    0%{
+        opacity: 0;
+        transform: translateX(-8vw);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
